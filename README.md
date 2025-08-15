@@ -80,6 +80,7 @@ npm install SweetAlert2
 ├── package-lock.json         # Bloqueo de versiones de dependencias
 └── README.md                 # Documentación del proyecto
 
+```
 ---
 
 ## 📅 Avance del Proyecto
