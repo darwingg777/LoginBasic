@@ -1,8 +1,26 @@
-import './LoginPage.css'
+import { useState } from 'react';
+import './LoginPage.css';
+import Swal from 'sweetalert2';
 
 function LoginPage(){
+
+    const [username,setUsername] = useState('');
+    function handleLoginClick() {
+        if(username.trim()===''){
+            Swal.fire("por favor ingrese un nombre valido");
+        }
+        else{Swal.fire(username)}
+    }
     return (
-        <h1>LOGIN FUNCIONANDO</h1>
+        <div className='login-container'>
+            <h2>ejercicio de prueba </h2>
+            <input type="text" 
+            placeholder='escriba nombre de usuario'
+            value={username}
+            onChange={e => setUsername(e.target.value)} 
+            />
+            <button onClick={handleLoginClick}>iniciar seccion</button>
+        </div>
     );
 }
 

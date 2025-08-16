@@ -1,11 +1,10 @@
 import LoginPage from "./pages/LoginPage/LoginPage";
-
+import UseStateContador from "./playground/useState";
 function App() {
   return (
     <>
-      <LoginPage />
-      <LoginPage />
-      <LoginPage />
+      <UseStateContador />
+     
     </>
   );
 }
