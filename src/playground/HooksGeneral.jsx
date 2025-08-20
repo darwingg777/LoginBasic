@@ -4,6 +4,9 @@ function Hook(){
     return(
         <div>
             <h1>HOOKS GENERAL</h1>
+            <Link to={"/useState"}>
+            <button>IR A USESTATE</button>
+            </Link>
            
         </div>
     )

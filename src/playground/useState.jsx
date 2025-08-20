@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 function UseStateContador(){
     const [contador, setContador] = useState(0);
     function aumentar() {
@@ -12,6 +13,9 @@ function UseStateContador(){
             <h2>valorContador = {contador}</h2>
             <button onClick={aumentar}>aumentar</button>
             <button onClick={disminuir}>disminuir</button>
+             <Link to="/hooks">
+            <button>VOLVER AL hooks</button>
+            </Link>
          </div>
     );
 }

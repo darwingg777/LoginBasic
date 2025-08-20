@@ -4,10 +4,12 @@ import Forgot from "./pages/ForgotPage/ForgotPage.jsx";
 import LoginPage from "./pages/LoginPage/LoginPage.jsx";
 import Register from "./pages/RegisterPage/RegisterPage.jsx";
 import Hooks from "./playground/HooksGeneral.jsx";
- // Assuming this is the correct import for the Home component
+import UseState from "./playground/UseState.jsx";
+
 
 import { Route, Routes } from "react-router-dom";
 import './App.css';
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/forgot" element={<Forgot />} />
         <Route path="/hooks" element={<Hooks />} />
+        <Route path="/UseState" element={<UseState />} />
         
       </Routes>
     </BrowserRouter>

@@ -10,6 +10,8 @@ function Home(){
             <Link to="/forgot">
             <button>OLVIDE MI CONTRASEÑA</button>
             </Link>
+            <Link to="/UseState">
+            <button>IR AL CONTADOR</button></Link>
         </div>
     )
 }
